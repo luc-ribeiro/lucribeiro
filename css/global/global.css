@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
   box-sizing: border-box;
 }
 
@@ -29,8 +30,4 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-img[src$='.jpg'] {
-  border-radius: 4px;
 }
