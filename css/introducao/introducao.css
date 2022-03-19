@@ -1,4 +1,146 @@
+.introducao-bg {
+  background: url('../../img/dec/dec-top.svg') no-repeat right top 24px,
+    url('../../img/dec/dec-bottom.svg') no-repeat bottom left;
+  padding: 120px 0;
+}
+
+.introducao.container {
+  max-width: 1330px;
+}
+
 .introducao {
   display: grid;
   grid-template-columns: 48px 1fr 1fr;
+  gap: 24px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 44px;
+  border: 1px solid var(--cor-p4);
+  height: max-content;
+  padding: 12px;
+  border-radius: 50px;
+  background-color: var(--cor-1);
+}
+
+.info h1 {
+  margin-bottom: 32px;
+}
+
+.info h1 + p {
+  margin-bottom: 20px;
+  max-width: 40ch;
+}
+
+.info .botao {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil .circulo-externo {
+  width: 420px;
+  height: 420px;
+  border: 4px solid var(--cor-p4);
+  border-radius: 50%;
+  position: relative;
+  animation: move 120s linear infinite;
+}
+
+.perfil .circulo-externo img {
+  width: 32px;
+  height: 32px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--cor-0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil .circulo-externo img:nth-child(1) {
+  left: calc(50% - 20px);
+  top: -20px;
+}
+
+.perfil .circulo-externo img:nth-child(2) {
+  right: -20px;
+  top: calc(50% - 20px);
+}
+
+.perfil .circulo-externo img:nth-child(3) {
+  left: -20px;
+  top: calc(50% - 20px);
+}
+
+.perfil .circulo-externo img:nth-child(4) {
+  left: calc(50% - 20px);
+  bottom: -20px;
+}
+
+.perfil .circulo-interno {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow-y: hidden;
+}
+
+@keyframes move {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .introducao-bg {
+    padding: 60px 0;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .redes {
+    display: none;
+  }
+
+  .info {
+    place-self: center;
+    text-align: center;
+    order: 2;
+  }
+
+  .info h1 {
+    margin-bottom: 16px;
+  }
+
+  .info button {
+    margin: 0 auto;
+  }
+
+  .perfil {
+    margin-bottom: 32px;
+  }
+
+  .perfil .circulo-externo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .perfil .circulo-interno {
+    width: 200px;
+    height: 200px;
+  }
 }

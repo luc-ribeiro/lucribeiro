@@ -13,10 +13,6 @@
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script>
-      document.documentElement.classList.add('js')
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,50 +21,84 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header-bg">
       <div class="header container">
         <a href="#">
           <img
             src="./img/lucasribeiro.svg"
             width="231"
             height="29"
+            id="logo"
             alt="Lucas Ribeiro"
           />
         </a>
 
-        <nav aria-label="primaria">
+        <nav id="menu" aria-label="primaria">
           <ul class="header-menu font-2-s-menu cor-10">
             <li><a href="#home" class="ativo">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
-          <button><img src="./img/icones/menu.svg" alt="Menu" /></button>
-          <button><img src="./img/icones/fechar.svg" alt="Menu" /></button>
         </nav>
+        <button
+          aria-controls="menu"
+          aria-haspopup="true"
+          aria-label="Abrir Menu"
+          id="menu-btn"
+          aria-expanded="false"
+        >
+          <img src="./img/icones/menu.svg" alt="Menu" />
+        </button>
+        <button aria-controls="menu" id="close-btn" aria-expanded="true">
+          <img src="./img/icones/fechar.svg" alt="Menu" />
+        </button>
       </div>
     </header>
 
-    <main class="introducao">
-      <div class="socials">
-        <a href=""><img src="./img/redes/github.svg" alt="Github" /></a>
-        <a href=""><img src="./img/redes/facebook.svg" alt="Facebook" /></a>
-        <a href=""><img src="./img/redes/instagram.svg" alt="Instagram" /></a>
-      </div>
+    <main class="introducao-bg">
+      <div class="introducao container">
+        <div class="redes">
+          <a href="https://github.com/luc-ribeiro"
+            ><img src="./img/redes/github.svg" alt="Github"
+          /></a>
+          <a href="https://www.facebook.com/lucribeirodesouza"
+            ><img src="./img/redes/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/luc_ribeiro/"
+            ><img src="./img/redes/instagram.svg" alt="Instagram"
+          /></a>
+        </div>
 
-      <div class="info">
-        <p class="font-2-s cor-9">Olá, me chamo Lucas Ribeiro</p>
-        <h1 class="font-1-xl cor-11">
-          Desenvolvedor Front-End<span class="cor-p4">.</span>
-        </h1>
-        <p class="font-2-m cor-8">
-          Estudante de Análise e Desenvolvimento de Sistemas e apaixonado por
-          tecnologia.
-        </p>
-        <button class="botao">Baixar Currículo</button>
-      </div>
+        <div class="info">
+          <p class="font-2-s cor-8">Olá, me chamo Lucas Ribeiro. 👋</p>
+          <h1 class="font-1-xl cor-11">
+            Desenvolvedor <br />
+            Front End<span class="cor-p4">.</span>
+          </h1>
+          <p class="font-2-m cor-7">
+            Estudante de Análise e Desenvolvimento de Sistemas e apaixonado por
+            tecnologia.
+          </p>
+          <button class="botao">
+            <img src="./img/icones/download-icone.svg" alt="" />Baixar Currículo
+          </button>
+        </div>
 
-      <div class="foto"></div>
+        <div class="perfil">
+          <div class="circulo-externo">
+            <img src="./img/icones/code.svg" />
+            <img src="./img/icones/laptop.svg" />
+            <img src="./img/icones/design.svg" />
+            <img src="./img/icones/terminal.svg" />
+          </div>
+          <div class="circulo-interno">
+            <img src="./img/fotos/lucasribeiro.jpeg" alt="Lucas Ribeiro" />
+          </div>
+        </div>
+      </div>
     </main>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
