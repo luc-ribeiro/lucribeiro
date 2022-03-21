@@ -1,0 +1,115 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sobre-info h2 {
+  position: relative;
+  width: max-content;
+  margin-bottom: 20px;
+}
+
+.sobre-info h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-11);
+  position: absolute;
+}
+
+.sobre-info p {
+  margin-bottom: 32px;
+}
+
+.botoes {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.habilidades {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  display: none;
+}
+
+.formacao {
+  display: none;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--cor-p5);
+}
+
+.faculdade-tipo {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.faculdade-curso {
+  flex: 1;
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.faculdade-curso::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(
+    166.96deg,
+    #3459df 11.03%,
+    #153cc6 47.16%,
+    #0f2d95 88.97%
+  );
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.faculdade-periodo {
+  font-size: 12px;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.cursos li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cor-p2);
+}
+
+.cursos span {
+  color: var(--cor-8);
+  display: flex;
+  align-self: end;
+}

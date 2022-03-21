@@ -4,7 +4,6 @@
 @import './utilidades/animacao.css';
 
 @import './global/header.css';
-@import './introducao/introducao.css';
 @import './global/footer.css';
 
 /* Utilidades */
@@ -12,3 +11,6 @@
 
 /* Home */
 @import './home/introducao.css';
+
+/* Sobre */
+@import './home/sobre.css';

@@ -2,6 +2,7 @@
   background: url('../../img/dec/dec-top.svg') no-repeat right top 24px,
     url('../../img/dec/dec-bottom.svg') no-repeat bottom left;
   padding: 120px 0;
+  margin-bottom: 120px;
 }
 
 .introducao.container {
