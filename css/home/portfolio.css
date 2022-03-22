@@ -1,0 +1,61 @@
+.portfolio-bg {
+  background: url('../../img/dec/dec-center.svg') no-repeat left center;
+  margin-bottom: 120px;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.portfolio-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 40px;
+}
+
+.portfolio-imagem {
+  margin-bottom: 16px;
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 16px;
+}
+
+.portfolio .botao,
+.portfolio .botao-secundario {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-botao-fonte);
+}
+
+.portfolio .botao {
+  background: var(--cor-p4);
+}
+
+.portfolio .botao-secundario {
+  background: var(--cor-p5);
+}
+
+@media (max-width: 1300px) {
+  .portfolio-bg {
+    background: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .portfolio-bg {
+    margin-bottom: 60px;
+  }
+  .portfolio-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-links {
+    justify-content: center;
+  }
+}

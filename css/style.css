@@ -3,8 +3,8 @@
 @import './utilidades/cores.css';
 @import './utilidades/animacao.css';
 
+/* Header */
 @import './global/header.css';
-@import './global/footer.css';
 
 /* Utilidades */
 @import './utilidades/componentes.css';
@@ -14,3 +14,12 @@
 
 /* Sobre */
 @import './home/sobre.css';
+
+/* Portfolio */
+@import './home/portfolio.css';
+
+/* Contato */
+@import './home/contato.css';
+
+/* Footer */
+@import './global/footer.css';

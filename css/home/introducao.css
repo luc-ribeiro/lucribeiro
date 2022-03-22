@@ -105,6 +105,9 @@
 }
 
 @media (max-width: 850px) {
+  .introducao.container {
+    max-width: 1200px;
+  }
   .introducao-bg {
     padding: 60px 0;
   }
