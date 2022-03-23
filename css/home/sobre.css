@@ -33,13 +33,13 @@
   display: flex;
   gap: 30px;
   margin-bottom: 32px;
+  flex-wrap: wrap;
 }
 
 .habilidades {
   display: flex;
   gap: 32px;
   align-items: center;
-  /* display: none; */
 }
 
 .formacao {

@@ -36,3 +36,7 @@ button {
   outline: 0;
   border: 0;
 }
+
+section {
+  padding: 220px 0;
+}

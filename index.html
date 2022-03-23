@@ -48,25 +48,42 @@
           id="menu-btn"
           aria-expanded="false"
         >
-          <img src="./img/icones/menu.svg" alt="Menu" />
+          <img src="./img/icones/menu.svg" width="24" height="24" alt="Menu" />
         </button>
         <button aria-controls="menu" id="close-btn" aria-expanded="true">
-          <img src="./img/icones/fechar.svg" alt="Menu" />
+          <img
+            src="./img/icones/fechar.svg"
+            width="24"
+            height="24"
+            alt="Menu"
+          />
         </button>
       </div>
     </header>
 
-    <main class="introducao-bg">
+    <main id="home" class="introducao-bg">
       <div class="introducao container">
         <div class="redes">
-          <a href="https://github.com/luc-ribeiro"
-            ><img src="./img/redes/github.svg" alt="Github"
+          <a href="https://github.com/luc-ribeiro" target="_blank"
+            ><img
+              src="./img/redes/github.svg"
+              width="24"
+              height="24"
+              alt="Github"
           /></a>
-          <a href="https://www.facebook.com/lucribeirodesouza"
-            ><img src="./img/redes/facebook.svg" alt="Facebook"
+          <a href="https://www.facebook.com/lucribeirodesouza" target="_blank"
+            ><img
+              src="./img/redes/facebook.svg"
+              width="24"
+              height="24"
+              alt="Facebook"
           /></a>
-          <a href="https://www.instagram.com/luc_ribeiro/"
-            ><img src="./img/redes/instagram.svg" alt="Instagram"
+          <a href="https://www.instagram.com/luc_ribeiro/" target="_blank"
+            ><img
+              src="./img/redes/instagram.svg"
+              width="24"
+              height="24"
+              alt="Instagram"
           /></a>
         </div>
 
@@ -80,29 +97,53 @@
             Estudante de Análise e Desenvolvimento de Sistemas e apaixonado por
             tecnologia.
           </p>
-          <button class="botao">
-            <img src="./img/icones/download-icone.svg" alt="" />Baixar Currículo
-          </button>
+          <a
+            href="img/Curriculo_LucasRibeiroDeSouza.pdf"
+            class="botao"
+            download
+          >
+            <img
+              src="./img/icones/download-icone.svg"
+              width="24"
+              height="24"
+              alt=""
+            />Baixar Currículo
+          </a>
         </div>
 
         <div class="perfil">
           <div class="circulo-externo">
-            <img src="./img/icones/code.svg" />
-            <img src="./img/icones/laptop.svg" />
-            <img src="./img/icones/design.svg" />
-            <img src="./img/icones/terminal.svg" />
+            <img src="./img/icones/code.svg" width="24" height="24" alt="" />
+            <img src="./img/icones/laptop.svg" width="24" height="24" alt="" />
+            <img src="./img/icones/design.svg" width="24" height="24" alt="" />
+            <img
+              src="./img/icones/terminal.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
           </div>
           <div class="circulo-interno">
-            <img src="./img/fotos/lucasribeiro.jpeg" alt="Lucas Ribeiro" />
+            <img
+              src="./img/fotos/lucasribeiro.jpg"
+              width="411"
+              height="418"
+              alt="Lucas Ribeiro"
+            />
           </div>
         </div>
       </div>
     </main>
 
-    <section class="sobre-bg">
+    <section id="sobre" class="sobre-bg">
       <div class="sobre container">
         <div class="sobre-img">
-          <img src="./img/fotos/ilustracao.svg" alt="" />
+          <img
+            src="./img/fotos/ilustracao.svg"
+            width="501"
+            height="364"
+            alt="Ilustração"
+          />
         </div>
         <div class="sobre-info">
           <h2 class="font-1-l cor-11 subtitulo">Sobre mim.</h2>
@@ -114,18 +155,35 @@
           </p>
 
           <div class="botoes">
-            <button id="habilidades" class="botao">Habilidades</button>
-            <button id="formacao" class="botao-secundario">Formação</button>
-            <button id="cursos" class="botao-secundario">Cursos</button>
+            <button id="habilidadesBtn" class="botao-sobre ativo">
+              Habilidades
+            </button>
+            <button id="formacaoBtn" class="botao-sobre">Formação</button>
+            <button id="cursosBtn" class="botao-sobre">Cursos</button>
           </div>
 
-          <div class="habilidades">
-            <img src="./img/tecnologias/html.svg" alt="HTML" />
-            <img src="./img/tecnologias/css.svg" alt="CSS" />
-            <img src="./img/tecnologias/javascript.svg" alt="JavaScript" />
+          <div id="habilidadesDiv" class="habilidades">
+            <img
+              src="./img/tecnologias/html.svg"
+              width="81"
+              height="81"
+              alt="HTML"
+            />
+            <img
+              src="./img/tecnologias/css.svg"
+              width="81"
+              height="81"
+              alt="CSS"
+            />
+            <img
+              src="./img/tecnologias/javascript.svg"
+              width="81"
+              height="81"
+              alt="JavaScript"
+            />
           </div>
 
-          <div class="formacao">
+          <div id="formacaoDiv" class="formacao">
             <ul class="faculdade-lista">
               <li class="faculdade">
                 <span class="faculdade-tipo font-2-s cor-9">Tecnólogo</span>
@@ -158,7 +216,7 @@
             </ul>
           </div>
 
-          <div class="cursos">
+          <div id="cursosDiv" class="cursos">
             <ul class="font-2-s cor-9">
               <li>
                 <span> Web Design Completo </span>
@@ -190,7 +248,7 @@
       </div>
     </section>
 
-    <section class="portfolio-bg">
+    <section id="portfolio" class="portfolio-bg">
       <div class="portfolio container">
         <div class="portfolio-header">
           <h2 class="font-1-l cor-11 subtitulo">Portfólio.</h2>
@@ -198,15 +256,33 @@
         <div class="portfolio-conteudo">
           <div>
             <div class="portfolio-imagem">
-              <img src="./img/portfolio/portfolio-1.jpg" alt="" />
+              <img
+                src="./img/portfolio/portfolio-1.jpg"
+                width="1120"
+                height="540"
+                alt="Item do Portfolio"
+              />
             </div>
             <div class="portfolio-links">
-              <a class="botao" href="">
-                <img src="./img/redes/github-botao.svg" alt="" />
+              <a
+                class="botao"
+                href="https://github.com/luc-ribeiro/ribeiro-tecnologia"
+                target="_blank"
+              >
+                <img
+                  src="./img/redes/github-botao.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
                 Github
               </a>
-              <a class="botao-secundario" href="">
-                <img src="./img/redes/web.svg" alt="" />
+              <a
+                class="botao-secundario"
+                href="https://www.ribeirotecnologia.com/"
+                target="_blank"
+              >
+                <img src="./img/redes/web.svg" width="24" height="24" alt="" />
                 Demo
               </a>
             </div>
@@ -214,15 +290,33 @@
 
           <div>
             <div class="portfolio-imagem">
-              <img src="./img/portfolio/portfolio-2.jpg" alt="" />
+              <img
+                src="./img/portfolio/portfolio-2.jpg"
+                width="1120"
+                height="540"
+                alt="Item do Portfolio"
+              />
             </div>
             <div class="portfolio-links">
-              <a class="botao" href="">
-                <img src="./img/redes/github-botao.svg" alt="" />
+              <a
+                class="botao"
+                href="https://github.com/luc-ribeiro/pizzas-cart"
+                target="_blank"
+              >
+                <img
+                  src="./img/redes/github-botao.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
                 Github
               </a>
-              <a class="botao-secundario" href="">
-                <img src="./img/redes/web.svg" alt="" />
+              <a
+                class="botao-secundario"
+                href="https://luc-ribeiro.github.io/pizzas-cart/"
+                target="_blank"
+              >
+                <img src="./img/redes/web.svg" width="24" height="24" alt="" />
                 Demo
               </a>
             </div>
@@ -230,15 +324,33 @@
 
           <div>
             <div class="portfolio-imagem">
-              <img src="./img/portfolio/portfolio-3.jpg" alt="" />
+              <img
+                src="./img/portfolio/portfolio-3.jpg"
+                width="1120"
+                height="540"
+                alt="Item do Portfolio"
+              />
             </div>
             <div class="portfolio-links">
-              <a class="botao" href="">
-                <img src="./img/redes/github-botao.svg" alt="" />
+              <a
+                class="botao"
+                href="https://github.com/luc-ribeiro/dev-finances"
+                target="_blank"
+              >
+                <img
+                  src="./img/redes/github-botao.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
                 Github
               </a>
-              <a class="botao-secundario" href="">
-                <img src="./img/redes/web.svg" alt="" />
+              <a
+                class="botao-secundario"
+                href="https://luc-ribeiro.github.io/dev-finances/"
+                target="_blank"
+              >
+                <img src="./img/redes/web.svg" width="24" height="24" alt="" />
                 Demo
               </a>
             </div>
@@ -246,15 +358,33 @@
 
           <div>
             <div class="portfolio-imagem">
-              <img src="./img/portfolio/portfolio-4.jpg" alt="" />
+              <img
+                src="./img/portfolio/portfolio-4.jpg"
+                width="1120"
+                height="540"
+                alt="Item do Portfolio"
+              />
             </div>
             <div class="portfolio-links">
-              <a class="botao" href="">
-                <img src="./img/redes/github-botao.svg" alt="" />
+              <a
+                class="botao"
+                href="https://github.com/luc-ribeiro/animais-fantasticos"
+                target="_blank"
+              >
+                <img
+                  src="./img/redes/github-botao.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
                 Github
               </a>
-              <a class="botao-secundario" href="">
-                <img src="./img/redes/web.svg" alt="" />
+              <a
+                class="botao-secundario"
+                href="https://luc-ribeiro.github.io/animais-fantasticos/"
+                target="_blank"
+              >
+                <img src="./img/redes/web.svg" width="24" height="24" alt="" />
                 Demo
               </a>
             </div>
@@ -263,7 +393,7 @@
       </div>
     </section>
 
-    <section class="contato-bg">
+    <section id="contato" class="contato-bg">
       <div class="contato container">
         <div class="contato-header">
           <h2 class="font-1-l cor-0 subtitulo">Contato</h2>
@@ -275,8 +405,16 @@
           </p>
 
           <ul class="contato-info font-2-l cor-0">
-            <li>lucasribeirodesouza@live.com</li>
-            <li>github.com/luc-ribeiro</li>
+            <li>
+              <a href="mailto:lucasribeirodesouza@live.com"
+                >lucasribeirodesouza@live.com</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/luc-ribeiro" target="_blank"
+                >github.com/luc-ribeiro</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -284,17 +422,37 @@
 
     <footer class="footer-bg">
       <div class="footer container">
-        <img src="./img/lucasribeiro-2.svg" alt="" />
+        <img
+          src="./img/lucasribeiro-2.svg"
+          width="231"
+          height="29"
+          alt="Lucas Ribeiro"
+        />
 
         <div class="footer-redes">
-          <a href="">
-            <img src="./img/redes/instagram-white.svg" alt="" />
+          <a href="https://www.instagram.com/luc_ribeiro/" target="_blank">
+            <img
+              src="./img/redes/instagram-white.svg"
+              width="24"
+              height="24"
+              alt="Instagram"
+            />
           </a>
-          <a href="">
-            <img src="./img/redes/facebook-white.svg" alt="" />
+          <a href="https://www.facebook.com/lucribeirodesouza" target="_blank">
+            <img
+              src="./img/redes/facebook-white.svg"
+              width="24"
+              height="24"
+              alt="Facebook"
+            />
           </a>
-          <a href="">
-            <img src="./img/redes/github-white.svg" alt="" />
+          <a href="https://github.com/luc-ribeiro" target="_blank">
+            <img
+              src="./img/redes/github-white.svg"
+              width="24"
+              height="24"
+              alt="Github"
+            />
           </a>
         </div>
       </div>

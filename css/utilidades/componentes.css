@@ -6,7 +6,8 @@
   margin-right: auto;
 }
 
-.botao {
+.botao,
+.botao-sobre.ativo {
   font: 600 1.8rem/1.33 'Fira Sans', sans-serif;
   display: inline-block;
   padding: 16px 32px;
@@ -28,6 +29,7 @@
   background: linear-gradient(#0f2d95, #081546);
 }
 
+.botao-sobre,
 .botao-secundario {
   font: 600 1.8rem/1.33 'Fira Sans', sans-serif;
   display: inline-block;
@@ -42,7 +44,7 @@
   cursor: pointer;
 }
 
-.botao-secundario:hover {
+.botao-sobre:hover {
   background: linear-gradient(
     166.96deg,
     #3459df 11.03%,

@@ -1,7 +1,8 @@
 .introducao-bg {
-  background: url('../../img/dec/dec-top.svg') no-repeat right top 24px,
+  background: url('../../img/dec/dec-top.svg') no-repeat right top 120px,
     url('../../img/dec/dec-bottom.svg') no-repeat bottom left;
-  padding: 120px 0;
+  padding-top: 200px;
+  padding-bottom: 120px;
   margin-bottom: 120px;
 }
 
@@ -41,6 +42,7 @@
   gap: 8px;
   align-items: center;
   justify-content: center;
+  width: max-content;
 }
 
 .perfil {
@@ -109,7 +111,8 @@
     max-width: 1200px;
   }
   .introducao-bg {
-    padding: 60px 0;
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
 
   .introducao {
@@ -130,7 +133,7 @@
     margin-bottom: 16px;
   }
 
-  .info button {
+  .info .botao {
     margin: 0 auto;
   }
 
