@@ -1,3 +1,5 @@
+// MENU HAMBURGUER
+
 const menuBtn = document.querySelector('#menu-btn')
 const closeBtn = document.querySelector('#close-btn')
 const menu = document.querySelector('#menu')
@@ -45,6 +47,8 @@ navItems.forEach(item => {
   })
 })
 
+// AO CLICAR NO ITEM DO MENU, SCROLL ATÉ ELE
+
 const sections = document.querySelectorAll('section, main')
 function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
@@ -72,6 +76,8 @@ function activateMenuAtCurrentSection() {
 window.addEventListener('scroll', function () {
   activateMenuAtCurrentSection()
 })
+
+// INTERAÇÃO DA SEÇÃO SOBRE
 
 const habilidadesBtn = document.querySelector('#habilidadesBtn')
 const formacaoBtn = document.querySelector('#formacaoBtn')
@@ -115,3 +121,9 @@ botoesItems = botoes.forEach(botao => {
     botao.classList.add('ativo')
   })
 })
+
+// Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime()
+}

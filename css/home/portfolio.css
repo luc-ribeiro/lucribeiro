@@ -24,20 +24,19 @@
   gap: 16px;
 }
 
-.portfolio .botao,
-.portfolio .botao-secundario {
+.portfolio .botao {
   display: flex;
   gap: 8px;
   align-items: center;
   justify-content: center;
-  color: var(--cor-botao-fonte);
+  border: 0;
 }
 
-.portfolio .botao {
+.portfolio-links .botao:nth-child(1) {
   background: var(--cor-p4);
 }
 
-.portfolio .botao-secundario {
+.portfolio-links .botao:nth-child(2) {
   background: var(--cor-p5);
 }
 

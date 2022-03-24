@@ -1,19 +1,18 @@
 .introducao-bg {
   background: url('../../img/dec/dec-top.svg') no-repeat right top 120px,
     url('../../img/dec/dec-bottom.svg') no-repeat bottom left;
-  padding-top: 200px;
+  padding-top: 227px;
   padding-bottom: 120px;
-  margin-bottom: 120px;
-}
-
-.introducao.container {
-  max-width: 1330px;
 }
 
 .introducao {
   display: grid;
   grid-template-columns: 48px 1fr 1fr;
   gap: 24px;
+}
+
+.introducao.container {
+  max-width: 1330px;
 }
 
 .redes {
@@ -107,12 +106,17 @@
 }
 
 @media (max-width: 850px) {
+  .introducao-bg {
+    background: url('../../img/dec/dec-top.svg') no-repeat right top 10px,
+      url('../../img/dec/dec-bottom.svg') no-repeat bottom left;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   .introducao.container {
     max-width: 1200px;
-  }
-  .introducao-bg {
-    padding-top: 120px;
-    padding-bottom: 60px;
   }
 
   .introducao {

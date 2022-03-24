@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Ribeiro - Desenvolvedor Front End</title>
     <meta name="description" content="Portfolio de Lucas Ribeiro." />
     <meta name="keyword" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Lucas Ribeiro" />
 
-    <title>Lucas Ribeiro</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./css/style.min.css" />
 
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      document.documentElement.classList.add('js')
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +26,7 @@
   </head>
   <body>
     <header class="header-bg">
-      <div class="header container">
+      <div class="header container" data-anime="200">
         <a href="#">
           <img
             src="./img/lucasribeiro.svg"
@@ -30,6 +34,8 @@
             height="29"
             id="logo"
             alt="Lucas Ribeiro"
+            class="fadeInDown"
+            data-anime="200"
           />
         </a>
 
@@ -63,7 +69,7 @@
 
     <main id="home" class="introducao-bg">
       <div class="introducao container">
-        <div class="redes">
+        <div class="redes fadeInLeft" data-anime="300">
           <a href="https://github.com/luc-ribeiro" target="_blank"
             ><img
               src="./img/redes/github.svg"
@@ -88,19 +94,22 @@
         </div>
 
         <div class="info">
-          <p class="font-2-s cor-8">Olá, me chamo Lucas Ribeiro. 👋</p>
-          <h1 class="font-1-xl cor-11">
+          <p class="font-2-s cor-8 fadeInDown" data-anime="350">
+            Olá, me chamo Lucas Ribeiro. 👋
+          </p>
+          <h1 class="font-1-xl cor-11 fadeInDown" data-anime="400">
             Desenvolvedor <br />
             Front End<span class="cor-p4">.</span>
           </h1>
-          <p class="font-2-m cor-7">
+          <p class="font-2-m cor-7 fadeInDown" data-anime="450">
             Estudante de Análise e Desenvolvimento de Sistemas e apaixonado por
             tecnologia.
           </p>
           <a
-            href="img/Curriculo_LucasRibeiroDeSouza.pdf"
-            class="botao"
-            download
+            href="https://bit.ly/CurriculoLucasRibeiro"
+            class="botao fadeInDown"
+            target="_blank"
+            data-anime="500"
           >
             <img
               src="./img/icones/download-icone.svg"
@@ -111,7 +120,7 @@
           </a>
         </div>
 
-        <div class="perfil">
+        <div class="perfil fadeInDown" data-anime="400">
           <div class="circulo-externo">
             <img src="./img/icones/code.svg" width="24" height="24" alt="" />
             <img src="./img/icones/laptop.svg" width="24" height="24" alt="" />
@@ -155,11 +164,11 @@
           </p>
 
           <div class="botoes">
-            <button id="habilidadesBtn" class="botao-sobre ativo">
+            <button id="habilidadesBtn" class="botao sobre ativo">
               Habilidades
             </button>
-            <button id="formacaoBtn" class="botao-sobre">Formação</button>
-            <button id="cursosBtn" class="botao-sobre">Cursos</button>
+            <button id="formacaoBtn" class="botao sobre">Formação</button>
+            <button id="cursosBtn" class="botao sobre">Cursos</button>
           </div>
 
           <div id="habilidadesDiv" class="habilidades">
@@ -278,7 +287,7 @@
                 Github
               </a>
               <a
-                class="botao-secundario"
+                class="botao"
                 href="https://www.ribeirotecnologia.com/"
                 target="_blank"
               >
@@ -312,7 +321,7 @@
                 Github
               </a>
               <a
-                class="botao-secundario"
+                class="botao"
                 href="https://luc-ribeiro.github.io/pizzas-cart/"
                 target="_blank"
               >
@@ -346,7 +355,7 @@
                 Github
               </a>
               <a
-                class="botao-secundario"
+                class="botao"
                 href="https://luc-ribeiro.github.io/dev-finances/"
                 target="_blank"
               >
@@ -380,7 +389,7 @@
                 Github
               </a>
               <a
-                class="botao-secundario"
+                class="botao"
                 href="https://luc-ribeiro.github.io/animais-fantasticos/"
                 target="_blank"
               >
@@ -396,7 +405,7 @@
     <section id="contato" class="contato-bg">
       <div class="contato container">
         <div class="contato-header">
-          <h2 class="font-1-l cor-0 subtitulo">Contato</h2>
+          <h2 class="font-1-l cor-0 subtitulo">Contato.</h2>
         </div>
         <div class="contato-conteudo">
           <p class="font-2-m cor-4">
@@ -458,6 +467,7 @@
       </div>
     </footer>
 
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

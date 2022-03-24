@@ -19,24 +19,3 @@
   transform: none;
   transition: transform 0.8s, opacity 0.8s;
 }
-
-/* Slider */
-
-.swiper-container {
-  border-radius: 0.4rem;
-}
-
-.swiper-slide {
-  height: auto;
-  padding: 4rem 0;
-}
-
-.swiper-pagination-bullet {
-  width: 1rem;
-  height: 1rem;
-  background: var(--white-l2);
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--orange-l2);
-}

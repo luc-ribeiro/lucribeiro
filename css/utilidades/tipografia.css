@@ -50,6 +50,10 @@
   .font-2-m {
     font-size: 1.8rem;
   }
+
+  .font-2-s {
+    font: 400 1.8rem/1.6 'Fira Sans', sans-serif;
+  }
 }
 
 @media (max-width: 600px) {

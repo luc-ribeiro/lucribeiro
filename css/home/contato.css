@@ -1,5 +1,6 @@
 .contato-bg {
   background: var(--cor-p4);
+  padding: unset;
 }
 
 .contato {
@@ -53,10 +54,5 @@
 
   .contato-conteudo li {
     text-align: left;
-  }
-}
-
-@media (max-width: 500px) {
-  .contato-conteudo {
   }
 }

@@ -43,10 +43,28 @@
 
 @media (max-width: 800px) {
   .header-bg {
-    padding: 32px;
+    position: static;
+    padding: 0;
   }
 
-  #menu {
+  .js .header-bg {
+    position: fixed;
+    padding: 24px;
+  }
+
+  .header {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 40px;
+  }
+
+  .js .header {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .js #menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,11 +77,19 @@
   }
 
   .header-menu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .js .header-menu {
     flex-direction: column;
     gap: 0px;
   }
 
   .header-menu a {
+    padding: 16px;
     width: 100%;
   }
 
@@ -74,6 +100,10 @@
   }
 
   .header button {
+    display: none;
+  }
+
+  .js .header button {
     display: inline-block;
     cursor: pointer;
     background: transparent;
